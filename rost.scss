@@ -1,0 +1,68 @@
+@import "var";
+@import "maxinn";
+
+.intro{
+    height: map-get($size,"introhg" );
+    width:  map-get($size,"introwd" );
+    background-color: map-get($colors,"intro");
+    margin-top: map-get($size,"intromt");
+
+    .heading 
+    {   margin-top: 40px;
+        margin-left: 10px;
+        p{
+            font-size: map-get($size,"fsize");
+            color: map-get($colors, "hdtxt");
+        }
+
+            span{
+                 color: map-get($colors,"pratxt");
+            }
+        .btnmn{
+            display: flex;
+            margin-top: 15px;
+            .btncl button{
+                @include intbutn; 
+                margin-top: 10px;
+
+                &:hover{
+                    background-color: rgba(140, 124, 124, 0.8);
+                    color:  white;
+                }  
+            
+            }
+
+            .btnc2{
+
+                .icon{
+
+                }
+
+                p{
+                    font-size:18px;
+                    margin-top: 15px;
+                    margin-left: 12px;
+
+                }
+            }
+
+           
+        }
+           
+    
+    }
+  
+    
+}
+
+
+.headright{
+    img{
+        height: map-get($size, "imghg");
+        width: map-get($size, "imgwd");
+       margin-top: 20px;
+    }
+}
+
+
+

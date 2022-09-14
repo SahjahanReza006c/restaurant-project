@@ -1,0 +1,12 @@
+@import "var"; 
+
+@mixin intbutn{
+    background-color: map-get($colors,"btnbgclr");
+    height:  map-get($size,"btnhg");
+    width: map-get($size,"btnwd");
+    border-radius: 50px;
+    color: map-get($colors, "btntxtclr");
+    border:none; 
+    
+
+}
